@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Begin basic CRUD app",
   "scripts": {
-    "start": "cross-env NODE_ENV=testing npx sandbox"
+    "deploy": "git push origin master",
+    "deploy-prod": "npm version patch; git push origin master",
+    "start": "cross-env NODE_ENV=testing npx sandbox",
+    "dev": "cross-env NODE_ENV=testing npx sandbox"
   },
   "devDependencies": {
     "@architect/sandbox": "latest",
