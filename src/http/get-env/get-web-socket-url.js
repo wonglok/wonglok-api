@@ -5,8 +5,8 @@
 module.exports = function getWS() {
   let env = process.env.NODE_ENV
   let testing = 'ws://localhost:3333'
-  let staging = 'wss://api-staging.wonglok.com/'
-  let production = 'wss://api.wonglok.com/'
+  let staging = 'wss://sweet-ckt-staging.begin.app'
+  let production = 'wss://sweet-ckt.begin.app'
   if (env === 'testing')
     return testing
   if (env === 'staging')
